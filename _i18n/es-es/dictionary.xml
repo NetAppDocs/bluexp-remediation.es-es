@@ -531,7 +531,6 @@
   <block id="0723f0287083e700309ab63bd37a0c33" category="section-title">Cree una plantilla para un volumen Azure NetApp Files</block>
   <block id="38c68ceb833297ed3631cc6cc44141ab" category="paragraph">La creación de una plantilla para un volumen Azure NetApp Files se realiza de la misma manera que la creación de una plantilla para un volumen Cloud Volumes ONTAP.</block>
   <block id="98165316f4a6a7eb3b2eea00a7c71656" category="inline-link">cómo aprovisionar volúmenes de Azure NetApp Files</block>
-  <block id="1dcec9f35c7e20c4011388d6173a9a3e" category="paragraph">Consulte<block ref="71642e13367a6341a10e13f459821e6e" category="inline-link-rx"></block> Para obtener detalles acerca de todos los parámetros que necesita completar en la plantilla de volumen ANF.</block>
   <block id="31ea9a5156da1667ca8c913660cb04e8" category="paragraph"><block ref="31ea9a5156da1667ca8c913660cb04e8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b1198c02b1425b74b6391ffd99cbc74b" category="list-text">Seleccione *plantilla en blanco* y haga clic en *comenzar*.</block>
   <block id="ddc839fd59d3af096b5f24caa0aac73e" category="list-text">Seleccione *Crear volumen en Azure NetApp Files* como el tipo de recurso que desea crear y haga clic en *aplicar*.</block>
@@ -685,7 +684,6 @@
   <block id="23647b4aee667229f438bac6d37c6f14" category="list-text">Seleccione la<block ref="fce626f96b8a582bd914af9774e3f4bd" category="inline-link-rx"></block> que usted desea utilizar.</block>
   <block id="28b7ceda6afe52e7cddb056ae1cc1b42" category="list-text">Seleccione una copia puntual o una programación de replicación recurrente.</block>
   <block id="a890fcd17657bbd0255d609a9ac66f87" category="inline-link-macro">Vea cómo se ve esto en el informe sobre la deriva</block>
-  <block id="550aba8dd2351fcca6220e9726d1b0b4" category="list-text">Habilite la supervisión del estado de la replicación si desea que el informe drift incluya el estado de la replicación de la relación de SnapMirror junto con el tiempo de retraso, el estado y el momento de la última transferencia. <block ref="e9afe1d61d7f4e2024b782abd0cbb1af" category="inline-link-macro-rx"></block>.</block>
   <block id="a17ec67a32a0998705df91c25c3b8420" category="list-text">Seleccione si desea establecer un límite de velocidad de transferencia y, a continuación, introduzca la tasa máxima (en kilobytes por segundo) a la que se pueden transferir los datos. Se puede introducir un valor fijo, o bien se puede proporcionar un valor mínimo y máximo para permitir que el administrador de almacenamiento seleccione un valor en ese rango.</block>
   <block id="e03c4d2a8455ec2482acf1f509382257" category="section-title">Qué hacer después de crear la plantilla</block>
   <block id="856a9d1850ea33e764f9c6e201455be4" category="paragraph">Después de crear una plantilla, debe informar a los administradores de almacenamiento de que la utilicen al crear nuevos entornos y volúmenes de trabajo.</block>
@@ -774,7 +772,6 @@
   <block id="e7ec4c4152826f2deedfea467894a855" category="paragraph"><block ref="e7ec4c4152826f2deedfea467894a855" category="inline-image-macro-rx" type="image"></block></block>
   <block id="af859a8aacc30e0bb1648f64ed76f23d" category="section-title">Detalles del estado de la replicación de BlueXP en el informe de deriva</block>
   <block id="dccc80768bfca83f2c18a964a2ada6e0" category="inline-link-macro">Habilitar la replicación de BlueXP en un volumen mediante plantillas</block>
-  <block id="9dd134a3f05a90dc02c4af5ebcb3faef" category="paragraph">Cuando <block ref="079d9da8cb6e56b01a7d0344b4200bdf" category="inline-link-macro-rx"></block>, Puede elegir mostrar información de replicación más detallada en el informe de deriva activando la deriva en el campo "Habilitar supervisión del estado de la replicación". Cuando está habilitado, el informe de deriva muestra si el estado de la relación de replicación de BlueXP es correcto o incorrecto (desviado), junto con el tiempo de retraso, el estado y el último tiempo de transferencia de SnapMirror.</block>
   <block id="ff1a821ec32f5470f851de8ef3edd6a9" category="summary">El servicio de corrección de BlueXP (AppTemplate) te permite estandarizar la creación de recursos para tus entornos de trabajo de BlueXP.</block>
   <block id="510f57bbfca743348ff245cb08dc02e3" category="doc">Documentación de corrección de BlueXP</block>
   <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
@@ -849,4 +846,7 @@
   <block id="89bd41d8bc97392a23a93ae863b454bb" category="sidebar">Utiliza la corrección de BlueXP</block>
   <block id="91770f038cd944a1d3b9b347edeb2b10" category="sidebar">Novedades</block>
   <block id="bdada2beda611e5479ba79eddd7f3b9f" category="sidebar">Agregue la funcionalidad de backup, clasificación o replicación a un volumen</block>
+  <block id="3c66700164b4cb085d6e086bf6b7d73b" category="paragraph">Cuando <block ref="438903b5e6182d9d4cc41396268e5cbc" category="inline-link-macro-rx"></block>, Puede elegir mostrar información de replicación más detallada en el informe de deriva activando la deriva en el campo "Habilitar supervisión del estado de la replicación". Cuando está habilitado, el informe de deriva muestra si el estado de la relación de replicación de BlueXP es correcto o incorrecto (desviado), junto con el tiempo de retraso, el estado y el último tiempo de transferencia de SnapMirror.</block>
+  <block id="c28223c3f7a03804f44448c7561c5f02" category="paragraph">Consulte<block ref="6525ab64efdc6d693874df3da6739f52" category="inline-link-rx"></block> Para obtener detalles acerca de todos los parámetros que necesita completar en la plantilla de volumen ANF.</block>
+  <block id="8abfe8e6c06581937c37ec49be54c6d7" category="list-text">Habilite la supervisión del estado de la replicación si desea que el informe drift incluya el estado de la replicación de la relación de SnapMirror junto con el tiempo de retraso, el estado y el momento de la última transferencia. <block ref="1eb00ed04881df5d17ae6b01acb7f8fb" category="inline-link-macro-rx"></block>.</block>
 </blocks>

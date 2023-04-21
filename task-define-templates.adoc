@@ -182,7 +182,7 @@ Consulte <<Qué hacer después de crear la plantilla,qué debe informar a sus us
 
 La creación de una plantilla para un volumen Azure NetApp Files se realiza de la misma manera que la creación de una plantilla para un volumen Cloud Volumes ONTAP.
 
-Consulte https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-manage-anf-volumes.html#creating-volumes["cómo aprovisionar volúmenes de Azure NetApp Files"^] Para obtener detalles acerca de todos los parámetros que necesita completar en la plantilla de volumen ANF.
+Consulte https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-create-volumes.html#create-volumes["cómo aprovisionar volúmenes de Azure NetApp Files"^] Para obtener detalles acerca de todos los parámetros que necesita completar en la plantilla de volumen ANF.
 
 .Pasos
 . Seleccione *Estado > resolución*, haga clic en la ficha *Plantillas* y haga clic en *Agregar nueva plantilla*.
@@ -695,7 +695,7 @@ image:screenshot_template_replication_policy.png["Una captura de pantalla de la 
 +
 .. Seleccione la https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication-policies.html#types-of-replication-policies["política de replicación"^] que usted desea utilizar.
 .. Seleccione una copia puntual o una programación de replicación recurrente.
-.. Habilite la supervisión del estado de la replicación si desea que el informe drift incluya el estado de la replicación de la relación de SnapMirror junto con el tiempo de retraso, el estado y el momento de la última transferencia. link:task-check-template-compliance.html#replication-health-details-in-the-drift-report["Vea cómo se ve esto en el informe sobre la deriva"].
+.. Habilite la supervisión del estado de la replicación si desea que el informe drift incluya el estado de la replicación de la relación de SnapMirror junto con el tiempo de retraso, el estado y el momento de la última transferencia. link:task-check-template-compliance.html#bluexp-replication-health-details-in-the-drift-report["Vea cómo se ve esto en el informe sobre la deriva"].
 .. Seleccione si desea establecer un límite de velocidad de transferencia y, a continuación, introduzca la tasa máxima (en kilobytes por segundo) a la que se pueden transferir los datos. Se puede introducir un valor fijo, o bien se puede proporcionar un valor mínimo y máximo para permitir que el administrador de almacenamiento seleccione un valor en ese rango.
 
 
