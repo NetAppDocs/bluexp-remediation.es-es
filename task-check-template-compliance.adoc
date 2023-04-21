@@ -34,7 +34,7 @@ image:screenshot_template_drift_on_template.png["Una captura de pantalla que mue
 
 . Los administradores de almacenamiento ejecutan la plantilla para crear volúmenes.
 . Más adelante, un administrador de almacenamiento edita un volumen y deshabilita las copias Snapshot.
-. Ejecuta comprobaciones de deriva en todas las plantillas y el servicio AppTemplates compara la configuración de la plantilla de copias Snapshot con la configuración actual del volumen. Los valores que no sean compatibles se marcan para que pueda corregir la configuración incorrecta.
+. Ejecutas la comprobación de deriva en todas las plantillas, y el servicio de recuperación de BlueXP compara la configuración de la plantilla de copias Snapshot con la configuración actual del volumen. Los valores que no sean compatibles se marcan para que pueda corregir la configuración incorrecta.
 
 
 
@@ -43,7 +43,7 @@ image:screenshot_template_drift_on_template.png["Una captura de pantalla que mue
 
 El Panel de deriva muestra el número total de recursos (por ejemplo, volúmenes) que se han creado utilizando sus plantillas, el número que todavía es compatible con la plantilla, el número que no es compatible (desviado) y el número que se creó con Desderiva.
 
-image:screenshot_template_drift_dashboard.png["Captura de pantalla del Panel de deriva del servicio AppTemplates."]
+image:screenshot_template_drift_dashboard.png["Una captura de pantalla de la consola de Drift para el servicio de corrección de BlueXP."]
 
 * Los controles de la parte superior de cada columna permiten ordenar los resultados en orden numérico o alfabético.
 * La image:screenshot_plus_icon.gif[""] Permite filtrar los resultados por nombre de plantilla, directiva de deriva y estado y tipo de acción. Por ejemplo:
@@ -85,9 +85,9 @@ Para ver un informe de deriva de los recursos que se han creado a partir de las 
 
 
 
-=== Detalles de la salud de la replicación en el informe de la deriva
+=== Detalles del estado de la replicación de BlueXP en el informe de deriva
 
-Cuando link:task-define-templates.html#add-replication-functionality-to-a-volume["Activación de la replicación en un volumen mediante plantillas"], Puede elegir mostrar información de replicación más detallada en el informe de deriva activando la deriva en el campo "Habilitar supervisión del estado de la replicación". Cuando se habilita esta opción, el informe sobre deriva muestra si el estado de la relación de replicación es bueno o no es correcto (a la deriva), así como el tiempo de retraso, el estado y la última transferencia de SnapMirror.
+Cuando link:task-define-templates.html#add-replication-functionality-to-a-volume["Habilitar la replicación de BlueXP en un volumen mediante plantillas"], Puede elegir mostrar información de replicación más detallada en el informe de deriva activando la deriva en el campo "Habilitar supervisión del estado de la replicación". Cuando está habilitado, el informe de deriva muestra si el estado de la relación de replicación de BlueXP es correcto o incorrecto (desviado), junto con el tiempo de retraso, el estado y el último tiempo de transferencia de SnapMirror.
 
 Esta captura de pantalla muestra los detalles de la replicación de una relación de SnapMirror que no están en buen estado en el informe de drift.
 

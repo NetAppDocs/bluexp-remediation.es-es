@@ -14,7 +14,7 @@ summary: BlueXP le permite aplicar etiquetas a sus recursos _existing_ para ayud
 
 
 [role="lead"]
-BlueXP (antes Cloud Manager) le permite aplicar etiquetas a sus recursos _existentes_ para ayudarle a organizar y administrar esos recursos. Las etiquetas son metadatos que puede utilizar para agrupar recursos para identificar aplicaciones, entornos, regiones, códigos de facturación, proveedores de cloud, y sigue.
+BlueXP le permite aplicar etiquetas a sus recursos _existing_ para ayudarle a organizar y administrar esos recursos. Las etiquetas son metadatos que puede utilizar para agrupar recursos para identificar aplicaciones, entornos, regiones, códigos de facturación, proveedores de cloud, y sigue.
 
 Las etiquetas consisten en una *clave de etiqueta* y un *valor de etiqueta*. Por ejemplo, puede crear una clave de etiqueta denominada "entorno" y, a continuación, agregar valores de etiqueta de "producción" y "Prueba". Después de aplicarse a los recursos, puede buscar y ver rápidamente recursos que coincidan con el par clave/valor.
 

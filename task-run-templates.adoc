@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-run-templates.html 
 keywords: templates, resource templates, services templates, volume templates, working environment templates 
-summary: 'Seleccione una de las plantillas de aplicaciones que su organización ha creado para crear entornos de trabajo o volúmenes optimizados para cargas de trabajo y aplicaciones específicas. Las plantillas también le permiten activar Cloud Backup, Cloud Data Sense y Replication (SnapMirror) en los volúmenes o en los volúmenes existentes.' 
+summary: 'Seleccione una de las plantillas de aplicaciones que su organización ha creado para crear entornos de trabajo o volúmenes optimizados para cargas de trabajo y aplicaciones específicas. Las plantillas también te permiten activar el backup y recuperación de datos de BlueXP, la clasificación de BlueXP y la replicación de BlueXP (SnapMirror) en los volúmenes o en los volúmenes existentes.' 
 ---
 = Crear o modificar recursos mediante plantillas
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'Seleccione una de las plantillas de aplicaciones que su organización 
 
 
 [role="lead"]
-Seleccione una de las plantillas de aplicaciones que su organización ha creado para crear entornos de trabajo o volúmenes optimizados para cargas de trabajo y aplicaciones específicas. Las plantillas también le permiten activar https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["Backup en el cloud"^], https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["Cloud Data SENSE"^], y. https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication.html["Replicación (SnapMirror)"^] en los volúmenes creados o en los volúmenes existentes.
+Seleccione una de las plantillas de aplicaciones que su organización ha creado para crear entornos de trabajo o volúmenes optimizados para cargas de trabajo y aplicaciones específicas. Las plantillas también le permiten activar https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html["Backup y recuperación de BlueXP"^], https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["Clasificación de BlueXP"^], y. https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication.html["Replicación de BlueXP"^] en los volúmenes creados o en los volúmenes existentes.
 
 Las plantillas le permiten crear volúmenes para sistemas Cloud Volumes ONTAP, Azure NetApp Files y ONTAP en las instalaciones.
 
@@ -30,7 +30,7 @@ Empiece rápidamente siguiendo estos pasos o desplácese hacia abajo hasta las s
 
 
 [role="quick-margin-list"]
-* Si la plantilla activa un servicio de cloud en el volumen, por ejemplo https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["Backup en el cloud"^] o. https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["Cloud Data SENSE"^], asegúrese de que el servicio esté activo y con licencia en su entorno.
+* Si la plantilla activa un servicio de cloud en el volumen, por ejemplo https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html["Backup y recuperación de BlueXP"^] o. https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["Clasificación de BlueXP"^], asegúrese de que el servicio esté activo y con licencia en su entorno.
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dos"] Inicie el servicio Plantillas de aplicación
@@ -51,7 +51,7 @@ Lea los siguientes requisitos para asegurarse de tener una configuración compat
 * Al crear un volumen de Cloud Volumes ONTAP, asegúrese de tener disponible un entorno de trabajo de Cloud Volumes ONTAP.
 * Al crear un volumen ONTAP en las instalaciones, asegúrese de que tiene disponible un entorno de trabajo ONTAP en las instalaciones.
 * Al crear un volumen de Azure NetApp Files, asegúrese de tener disponible un entorno de trabajo de Azure NetApp Files.
-* Si la plantilla activa un servicio de cloud en el volumen, por ejemplo  https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["Backup en el cloud"^], https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["Cloud Data SENSE"^], o. https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication.html["Replicación (SnapMirror)"^], asegúrese de que el servicio esté activo y con licencia en su entorno.
+* Si la plantilla activa un servicio de cloud en el volumen, por ejemplo  https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html["Backup y recuperación de BlueXP"^], https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["Clasificación de BlueXP"^], o. https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication.html["Replicación de BlueXP"^], asegúrese de que el servicio esté activo y con licencia en su entorno.
 
 
 
@@ -68,7 +68,7 @@ Independientemente del método elegido, los detalles acerca de los parámetros d
 
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-create-volumes.html#create-a-volume-from-a-template["Cómo aprovisionar volúmenes de Cloud Volumes ONTAP"^]
 * https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-create-volumes.html#create-volumes-from-templates["Cómo aprovisionar volúmenes de Azure NetApp Files"^]
-* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-provisioning-ontap.html#creating-volumes-from-templates["Cómo aprovisionar volúmenes de ONTAP en las instalaciones"^]
+* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-manage-ontap-connector.html#create-volumes-from-templates["Cómo aprovisionar volúmenes de ONTAP en las instalaciones"^]
 
 
 
@@ -155,7 +155,7 @@ image:screenshot_template_run_from_dashboard_we.png["Captura de pantalla que mue
 
 == Seleccione y ejecute una plantilla que encuentre los recursos existentes
 
-Puede ejecutar una plantilla que encuentre ciertos recursos (por ejemplo, volúmenes) y, a continuación, activar un servicio de cloud en esos recursos (por ejemplo, Cloud Backup) si su empresa ha creado una plantilla utilizando esta funcionalidad. Al ejecutar la plantilla, puede realizar algunos ajustes menores de modo que el servicio cloud solo se aplique a los recursos adecuados.
+Puedes ejecutar una plantilla que encuentre determinados recursos (por ejemplo, volúmenes) y, a continuación, habilite un servicio cloud en esos recursos (por ejemplo, backup y recuperación de BlueXP), si tu empresa ha creado una plantilla con esta funcionalidad. Al ejecutar la plantilla, puede realizar algunos ajustes menores de modo que el servicio cloud solo se aplique a los recursos adecuados.
 
 .Pasos
 . Seleccione *Estado > resolución* y haga clic en la ficha *Plantillas*.
@@ -173,13 +173,13 @@ Aparece la página _Run Template_ e inmediatamente ejecuta la búsqueda definida
 +
 image:screenshot_template_find_search_results.png["Una captura de pantalla que muestra cómo se devolvieron los volúmenes de los criterios de búsqueda de recursos de la búsqueda."]
 
-. Si los resultados son los que esperaba, seleccione la casilla de verificación para cada volumen que desea que se habilite Cloud Backup con los criterios de la parte _Enable Cloud Backup on Volume_ de la plantilla y haga clic en *Ejecutar plantilla*.
+. Si los resultados son los que esperabas, selecciona la casilla de verificación de cada volumen en el que quieras que la copia de seguridad y la recuperación de BlueXP estén habilitadas según los criterios de la parte _Enable Cloud Backup on Volume_ de la plantilla y haz clic en *Run Template*.
 +
 Si los resultados no son los esperados, haga clic en image:screenshot_edit_icon.gif["editar icono de lápiz"] Junto a _Search Criteria_ y afine aún más la búsqueda.
 
 
 
 .Resultados
-La plantilla se ejecutará y activará Cloud Backup en cada volumen que haya comprobado en los criterios de búsqueda.
+La plantilla se ejecutará y permitirá el backup y la recuperación de BlueXP en cada volumen que hayas comprobado en los criterios de búsqueda.
 
 Se llamará cualquier error en la página _Running your Template_ y podrá resolver los problemas si es necesario.

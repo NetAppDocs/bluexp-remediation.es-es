@@ -57,18 +57,18 @@ Por ejemplo, si introduce "[a-za-Z][0-9a-za-Z_]{0,149}$" como regex del nombre d
 
 == Pasar valores entre acciones de plantilla
 
-Las plantillas tienen la capacidad de utilizar información de una acción anterior para rellenar un campo en una acción futura. Por ejemplo, al definir el nombre del volumen que tendrá activada la funcionalidad de copia de seguridad en la nube, puede indicar a la acción copia de seguridad que utilice el valor que el administrador de almacenamiento introdujo como nombre del volumen desde la acción Crear Cloud Volumes ONTAP.
+Las plantillas tienen la capacidad de utilizar información de una acción anterior para rellenar un campo en una acción futura. Por ejemplo, al definir el nombre del volumen que tendrá habilitada la funcionalidad de backup y recuperación de BlueXP, puede indicar a la acción Backup que utilice el valor que el administrador de almacenamiento introdujo como nombre del volumen en la acción Crear Cloud Volumes ONTAP.
 
-Hay tres tipos de información que el servicio AppTemplate puede utilizar:
+Hay tres tipos de información que el servicio de corrección de BlueXP puede utilizar:
 
 * Valor de entrada: Es el valor real que el administrador de almacenamiento introdujo en un campo en una acción de plantilla anterior.
 * Valor de salida: Es el valor que genera BlueXP después de crear un recurso a partir de una acción de plantilla anterior.
 * Introduzca su propio valor: Éste es un valor que se introduce; no se accede a él desde una acción anterior de la plantilla.
 
 
-Por ejemplo, para permitir el análisis de cumplimiento de normativas en un volumen, el servicio Cloud Data Sense necesita tanto el "nombre del volumen" que introduce el administrador de almacenamiento (el valor de entrada) como el "UUID de volumen" que genera BlueXP cuando crea el volumen (el valor de salida).
+Por ejemplo, para habilitar el análisis de cumplimiento de un volumen, el servicio de clasificación de BlueXP necesita tanto el «nombre del volumen» que introduce el administrador de almacenamiento (el valor de entrada) como el «uuid del volumen» que BlueXP genera cuando crea el volumen (el valor de salida).
 
-En la siguiente ilustración, se muestra cómo introducir esta información en la sección Cloud Data Sense action de la plantilla.
+En la siguiente ilustración se muestra cómo introducir esta información en la sección acción de clasificación de BlueXP de la plantilla.
 
 image:screenshot_template_variable_input_output.png["Una ilustración que muestra cómo utilizar un valor introducido en una acción anterior para rellenar un campo en otra acción."]
 
@@ -80,9 +80,9 @@ Las condiciones indican a la plantilla que ejecute diferentes acciones en funci�
 
 image:screenshot_template_select_condition.png["Captura de pantalla de cómo agregar sentencias condicionales en las plantillas."]
 
-Por ejemplo, se puede presentar una guía que indica que, si un volumen tiene una capacidad superior a 50 GB, se debe habilitar Cloud Backup en ese volumen. Si el volumen tiene una capacidad menor, Cloud Backup no está habilitado. Puede implementarla en la plantilla, tal y como se muestra a continuación.
+Por ejemplo, puede que disponga de directrices para indicar que, si un volumen tiene una capacidad superior a 50 GB, será necesario habilitar el backup y la recuperación de BlueXP en ese volumen. Si el volumen tiene una capacidad menor, el backup y la recuperación de datos de BlueXP no están habilitados. Puede implementarla en la plantilla, tal y como se muestra a continuación.
 
-image:screenshot_template_condition_example.png["Captura de pantalla que muestra cómo se pueden utilizar las condiciones en la plantilla para habilitar Cloud Backup de forma condicional."]
+image:screenshot_template_condition_example.png["Una captura de pantalla que muestra cómo se pueden usar las condiciones en tu plantilla para habilitar de forma condicional el backup y la recuperación de BlueXP."]
 
 Las condiciones constan de dos partes:
 

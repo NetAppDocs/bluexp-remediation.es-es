@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concept-resource-templates.html 
 keywords: templates, overview, conceptual, resource templates, application templates, volume templates 
-summary: 'El servicio AppTemplate le permite estandarizar la creación de recursos en sus entornos de trabajo en BlueXP. Por ejemplo, puede codificar los parámetros necesarios en una "plantilla de volumen" que se aplican más tarde cuando un administrador de almacenamiento crea un volumen utilizando la plantilla. Puede incluir el tipo de disco necesario, el tamaño, el protocolo, la política de Snapshot, el proveedor de cloud, y sigue. También puede activar determinados servicios, como Cloud Backup, para cada volumen creado.' 
+summary: 'El servicio de corrección de BlueXP te permite estandarizar la creación de recursos en tus entornos de trabajo en BlueXP. Por ejemplo, puede codificar los parámetros necesarios en una "plantilla de volumen" que se aplican más tarde cuando un administrador de almacenamiento crea un volumen utilizando la plantilla. Puede incluir el tipo de disco necesario, el tamaño, el protocolo, la política de Snapshot, el proveedor de cloud, y sigue. También puedes activar determinados servicios, como el backup y la recuperación de BlueXP, para cada volumen que se cree.' 
 ---
-= Más información sobre AppTemplate
+= Más información sobre la corrección de BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 'El servicio AppTemplate le permite estandarizar la creación de recurs
 
 
 [role="lead"]
-El servicio AppTemplate le permite estandarizar la creación de recursos en sus entornos de trabajo en BlueXP (anteriormente Cloud Manager). Por ejemplo, puede codificar los parámetros necesarios en una "plantilla de volumen" que se aplican más tarde cuando un administrador de almacenamiento crea un volumen utilizando la plantilla. Puede incluir el tipo de disco necesario, el tamaño, el protocolo, la política de Snapshot, el proveedor de cloud, y sigue. También puede activar determinados servicios, como Cloud Backup, para cada volumen creado.
+El servicio de corrección de BlueXP te permite estandarizar la creación de recursos en tus entornos de trabajo en BlueXP. Por ejemplo, puede codificar los parámetros necesarios en una "plantilla de volumen" que se aplican más tarde cuando un administrador de almacenamiento crea un volumen utilizando la plantilla. Puede incluir el tipo de disco necesario, el tamaño, el protocolo, la política de Snapshot, el proveedor de cloud, y sigue. También puedes activar determinados servicios, como el backup y la recuperación de BlueXP, para cada volumen que se cree.
 
 Las plantillas facilitan que los administradores de almacenamiento creen volúmenes optimizados para los requisitos de carga de trabajo de cada aplicación puesta en marcha, como bases de datos, correo electrónico o servicios de streaming. Además, facilita la vida a los arquitectos de almacenamiento sabiendo que cada volumen se crea de forma óptima para cada aplicación.
 
@@ -22,10 +22,10 @@ Las plantillas facilitan que los administradores de almacenamiento creen volúme
 
 == Funciones
 
-AppTemplate ofrece las siguientes características y ventajas:
+La corrección de BlueXP ofrece las siguientes funciones y ventajas:
 
 * Automatiza y mejora el diseño y el desarrollo de su infraestructura
-* Ofrece una única ubicación para activar diferentes servicios de cloud de NetApp; como Cloud Backup y Cloud Data Sense
+* Proporciona una única ubicación para activar diferentes servicios de NetApp Cloud, como el backup y la recuperación de datos de BlueXP y la clasificación de BlueXP
 * Identifica los recursos que se han modificado y que ya no cumplen con la plantilla (mediante la operación "drift")
 +
 En este momento, deberá realizar ajustes manualmente para que el recurso vuelva a cumplir con la plantilla. link:task-check-template-compliance.html["Más información sobre la deriva"].
@@ -49,20 +49,20 @@ Una plantilla es una cadena de "acciones" que tiene algunos valores predefinidos
 
 *Servicios:*
 
-* Activar https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["Backup en el cloud"^] En los volúmenes (no aplicable para Azure NetApp Files)
-* Activar https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["Cloud Data SENSE"^] en los volúmenes
-* Activar https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication.html["Replicación"^] En los volúmenes (no aplicable para Azure NetApp Files)
+* Activar https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html["Backup y recuperación de BlueXP"^] En los volúmenes (no aplicable para Azure NetApp Files)
+* Activar https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["Clasificación de BlueXP"^] en los volúmenes
+* Activar https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication.html["Replicación de BlueXP"^] En los volúmenes (no aplicable para Azure NetApp Files)
 
 
-Por ejemplo, puede crear una plantilla que cree un volumen Cloud Volumes ONTAP. O que crea un volumen de Cloud Volumes ONTAP y, a continuación, habilita Cloud Backup en ese volumen. O que cree un volumen de Cloud Volumes ONTAP y, a continuación, habilita Cloud Backup _y_ Cloud Data Sense en ese volumen.
+Por ejemplo, puede crear una plantilla que cree un volumen Cloud Volumes ONTAP. O que crea un volumen de Cloud Volumes ONTAP y luego permite el backup y recuperación de datos de BlueXP en ese volumen. O que cree un volumen de Cloud Volumes ONTAP y, a continuación, habilite la clasificación de backup y recuperación de BlueXP en ese volumen.
 
 NetApp agregará más acciones a lo largo del tiempo.
 
 
 
-== Cómo funciona AppTemplate
+== Funcionamiento de la corrección de BlueXP
 
-El servicio AppTemplate consta de 3 partes. La plantilla disponible "acciones", la plantilla de aplicación personalizada y el recurso implementado como resultado de ejecutar la plantilla. La siguiente imagen muestra la relación entre cada componente:
+El servicio de corrección de BlueXP está compuesto por 3 partes. La plantilla disponible "acciones", la plantilla de aplicación personalizada y el recurso implementado como resultado de ejecutar la plantilla. La siguiente imagen muestra la relación entre cada componente:
 
 image:diagram_template_flow1.png["Un diagrama de los distintos usuarios implicados en la creación y utilización de plantillas de aplicación."]
 
@@ -87,15 +87,15 @@ Por ejemplo, crean un volumen que se utilizará para una base de datos Oracle me
 
 == Precios y licencias
 
-La función AppTemplate no requiere licencia y es gratuita para todos los usuarios de BlueXP.
+La función de corrección de BlueXP no requiere licencia y es de uso gratuito por parte de todos los usuarios de BlueXP.
 
 
-NOTE: Las plantillas le permiten aplicar un servicio cloud a los recursos creados; por ejemplo, habilite Cloud Backup en cada volumen. En este caso, el uso del servicio de backup y el espacio de almacenamiento de objetos que utilizan los archivos de backup tienen un coste.
+NOTE: Las plantillas te permiten aplicar un servicio cloud a recursos creados; por ejemplo, habilitar el backup y la recuperación de datos de BlueXP en cada volumen. En este caso, el uso del servicio de backup y el espacio de almacenamiento de objetos que utilizan los archivos de backup tienen un coste.
 
 
 
 == Limitaciones
 
-* El servicio AppTemplate no es compatible con ninguna de las regiones de Gov Cloud o en sitios sin acceso a Internet.
+* El servicio de corrección de BlueXP no es compatible con ninguna de las regiones de Gov Cloud ni en sitios sin acceso a Internet.
 * No puede usar una plantilla para crear un volumen de Cloud Volumes ONTAP en un agregado existente. Se crean nuevos volúmenes en un nuevo agregado.
 
