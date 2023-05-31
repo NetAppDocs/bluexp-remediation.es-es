@@ -28,7 +28,7 @@ Empiece rápidamente siguiendo estos pasos o desplácese hacia abajo hasta las s
 
 
 [role="quick-margin-list"]
-* Si tiene pensado agregar una "acción" de servicio cloud a su plantilla, por ejemplo https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html["Backup y recuperación de BlueXP"^] o. https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["Clasificación de BlueXP"^], asegúrese de que el servicio esté activo y con licencia en su entorno.
+* Si tiene pensado agregar una "acción" de servicio cloud a su plantilla, por ejemplo https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["Backup y recuperación de BlueXP"^] o. https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Clasificación de BlueXP"^], asegúrese de que el servicio esté activo y con licencia en su entorno.
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dos"] Inicie el servicio Plantillas de aplicación
@@ -45,10 +45,10 @@ Siga los pasos de creación y defina las acciones que realizará la plantilla.
 
 Lea los siguientes requisitos para asegurarse de tener una configuración compatible.
 
-* Si aún no tiene un conector, https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["Vea cómo crear conectores"^] Para AWS, Azure y GCP.
-* Al crear una plantilla de volumen de Cloud Volumes ONTAP, asegúrese de que dispone de un entorno de trabajo Cloud Volumes ONTAP para los usuarios. Compruebe cómo se inicia un sistema Cloud Volumes ONTAP en https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-aws.html["AWS"^], https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-azure.html["Azure"^], o en https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-gcp.html["GCP"^].
-* Al crear una plantilla de volumen ONTAP en las instalaciones, asegúrese de que tiene disponible un entorno de trabajo ONTAP en las instalaciones para sus usuarios. Descubra cómo https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Descubra un sistema ONTAP en las instalaciones"^] En BlueXP.
-* Al crear una plantilla de volumen Azure NetApp Files, asegúrese de que tiene un entorno de trabajo Azure NetApp Files disponible para los usuarios. Descubra cómo https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["Crear un entorno de trabajo de Azure NetApp Files"^] En BlueXP.
+* Si aún no tiene un conector, https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["Vea cómo crear conectores"^] Para AWS, Azure y GCP.
+* Al crear una plantilla de volumen de Cloud Volumes ONTAP, asegúrese de que dispone de un entorno de trabajo Cloud Volumes ONTAP para los usuarios. Compruebe cómo se inicia un sistema Cloud Volumes ONTAP en https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws.html["AWS"^], https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-azure.html["Azure"^], o en https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-gcp.html["GCP"^].
+* Al crear una plantilla de volumen ONTAP en las instalaciones, asegúrese de que tiene disponible un entorno de trabajo ONTAP en las instalaciones para sus usuarios. Descubra cómo https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Descubra un sistema ONTAP en las instalaciones"^] En BlueXP.
+* Al crear una plantilla de volumen Azure NetApp Files, asegúrese de que tiene un entorno de trabajo Azure NetApp Files disponible para los usuarios. Descubra cómo https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-quick-start.html["Crear un entorno de trabajo de Azure NetApp Files"^] En BlueXP.
 * Si tienes pensado utilizar el backup y la recuperación de datos de BlueXP para realizar una copia de seguridad de un volumen en la plantilla, asegúrate de que tu entorno haya activado el backup y la recuperación de BlueXP.
 * Si tienes pensado utilizar la clasificación de BlueXP para analizar volúmenes de la plantilla, asegúrate de que tu entorno haya activado la clasificación de BlueXP.
 * Si tienes pensado habilitar la replicación de BlueXP en la plantilla y la plantilla es para un volumen de ONTAP en las instalaciones, el clúster de ONTAP debe tener una licencia de SnapMirror activa.
@@ -64,7 +64,7 @@ Las plantillas de recursos le permiten crear nuevos volúmenes o un nuevo entorn
 
 === Cree una plantilla para un volumen de Cloud Volumes ONTAP
 
-Consulte https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-create-volumes.html["cómo aprovisionar volúmenes de Cloud Volumes ONTAP"^] Para obtener información detallada sobre todos los parámetros que necesita completar en la plantilla de volumen Cloud Volumes ONTAP.
+Consulte https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-create-volumes.html["cómo aprovisionar volúmenes de Cloud Volumes ONTAP"^] Para obtener información detallada sobre todos los parámetros que necesita completar en la plantilla de volumen Cloud Volumes ONTAP.
 
 En este ejemplo crearemos una plantilla llamada "volumen CVO para bases de datos" e incluiremos las dos acciones siguientes:
 
@@ -150,7 +150,7 @@ Cuando los usuarios inician la plantilla desde el Panel de plantillas (no en un 
 |===
 . *Segmentación:* Elija la política de organización en niveles que desea aplicar al volumen o establezca esta opción en "ninguna" si no desea organizar en niveles los datos inactivos de este volumen en el almacenamiento de objetos.
 +
-Consulte https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html#volume-tiering-policies["políticas de organización en niveles del volumen"^] para ver información general, consulte https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["Organización en niveles de los datos inactivos en el almacenamiento de objetos"^] para asegurarse de que su entorno esté configurado para la organización en niveles.
+Consulte https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html#volume-tiering-policies["políticas de organización en niveles del volumen"^] para ver información general, consulte https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-tiering.html["Organización en niveles de los datos inactivos en el almacenamiento de objetos"^] para asegurarse de que su entorno esté configurado para la organización en niveles.
 
 . Haga clic en *aplicar* después de definir los parámetros necesarios para esta acción.
 +
@@ -182,7 +182,7 @@ Consulte <<Qué hacer después de crear la plantilla,qué debe informar a sus us
 
 La creación de una plantilla para un volumen Azure NetApp Files se realiza de la misma manera que la creación de una plantilla para un volumen Cloud Volumes ONTAP.
 
-Consulte https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-create-volumes.html#create-volumes["cómo aprovisionar volúmenes de Azure NetApp Files"^] Para obtener detalles acerca de todos los parámetros que necesita completar en la plantilla de volumen ANF.
+Consulte https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-create-volumes.html#create-volumes["cómo aprovisionar volúmenes de Azure NetApp Files"^] Para obtener detalles acerca de todos los parámetros que necesita completar en la plantilla de volumen ANF.
 
 .Pasos
 . Seleccione *Estado > resolución*, haga clic en la ficha *Plantillas* y haga clic en *Agregar nueva plantilla*.
@@ -282,7 +282,7 @@ Consulte <<Qué hacer después de crear la plantilla,qué debe informar a sus us
 
 === Cree una plantilla para un volumen de ONTAP en las instalaciones
 
-Consulte https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-manage-ontap-connector.html#create-volumes["cómo aprovisionar volúmenes de ONTAP en las instalaciones"^] Si desea obtener información detallada sobre todos los parámetros necesarios para completar en la plantilla de volumen de ONTAP en las instalaciones.
+Consulte https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-manage-ontap-connector.html#create-volumes["cómo aprovisionar volúmenes de ONTAP en las instalaciones"^] Si desea obtener información detallada sobre todos los parámetros necesarios para completar en la plantilla de volumen de ONTAP en las instalaciones.
 
 .Pasos
 . Seleccione *Estado > resolución*, haga clic en la ficha *Plantillas* y haga clic en *Agregar nueva plantilla*.
@@ -390,7 +390,7 @@ Puede crear un entorno de trabajo Cloud Volumes ONTAP de un solo nodo o de alta 
 
 
 ====
-Consulte https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html#launching-a-single-node-cloud-volumes-ontap-system-in-aws["cómo iniciar el sistema Cloud Volumes ONTAP de un único nodo en AWS"^] o a https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html#launching-a-cloud-volumes-ontap-ha-pair-in-aws["Par de alta disponibilidad de Cloud Volumes ONTAP en AWS"^] para los requisitos previos que deben estar vigentes y para obtener detalles sobre todos los parámetros que deberá definir en esta plantilla.
+Consulte https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-aws.html#launching-a-single-node-cloud-volumes-ontap-system-in-aws["cómo iniciar el sistema Cloud Volumes ONTAP de un único nodo en AWS"^] o a https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-aws.html#launching-a-cloud-volumes-ontap-ha-pair-in-aws["Par de alta disponibilidad de Cloud Volumes ONTAP en AWS"^] para los requisitos previos que deben estar vigentes y para obtener detalles sobre todos los parámetros que deberá definir en esta plantilla.
 
 .Pasos
 . Seleccione *Estado > resolución*, haga clic en la ficha *Plantillas* y haga clic en *Agregar nueva plantilla*.
@@ -433,7 +433,7 @@ Algunos de los campos en esta página son claros y explicativos. En la siguiente
 
 | Etiquetas | Las etiquetas de AWS son metadatos para sus recursos de AWS. BlueXP agrega las etiquetas a la instancia de Cloud Volumes ONTAP y cada recurso de AWS asociado a la instancia. Para obtener información sobre etiquetas, consulte https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html["Documentación de AWS: Etiquetado de los recursos de Amazon EC2"^]. 
 |===
-. *Ubicación y conectividad*: Introduzca la información de red que grabó en https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-planning-your-config.html#collect-networking-information["Hoja de cálculo de AWS"^]. Esto incluye la región, VPC, subred y grupo de seguridad de AWS.
+. *Ubicación y conectividad*: Introduzca la información de red que grabó en https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config.html#collect-networking-information["Hoja de cálculo de AWS"^]. Esto incluye la región, VPC, subred y grupo de seguridad de AWS.
 +
 Si tiene una publicación externa de AWS, puede implementar un sistema Cloud Volumes ONTAP de un solo nodo en esa publicación seleccionando el VPC de salida. La experiencia es la misma que cualquier otro VPC que resida en AWS.
 
@@ -443,11 +443,11 @@ Si tiene una publicación externa de AWS, puede implementar un sistema Cloud Vol
 Para el cifrado gestionado por AWS, puede elegir una clave maestra de cliente (CMK) diferente de su cuenta u otra cuenta de AWS.
 
 +
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-setting-up-kms.html["Aprenda a configurar AWS KMS para el cloud Volumes ONTAP"^].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-setting-up-kms.html["Aprenda a configurar AWS KMS para el cloud Volumes ONTAP"^].
 
 . *Método de carga*: Especifique la opción de carga que desea utilizar con este sistema.
 +
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-set-up-licensing-aws.html["Conozca estos métodos de carga"^].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-set-up-licensing-aws.html["Conozca estos métodos de carga"^].
 
 . *Cuenta en la página de soporte de NetApp*: Seleccione una cuenta en la página de soporte de NetApp.
 . *Paquetes preconfigurados*: Seleccione uno de los cuatro paquetes preconfigurados que determinarán varios factores para volúmenes creados en el entorno de trabajo.
@@ -617,7 +617,7 @@ Las plantillas de servicios te permiten activar los servicios de backup y recupe
 
 === Añada la funcionalidad de backup a un volumen
 
-Al crear una plantilla de volumen, puede agregar en la plantilla que desea crear copias de seguridad del volumen periódicamente con el https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html["Backup y recuperación de BlueXP"^] servicio.
+Al crear una plantilla de volumen, puede agregar en la plantilla que desea crear copias de seguridad del volumen periódicamente con el https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["Backup y recuperación de BlueXP"^] servicio.
 
 
 TIP: Esta acción no es aplicable para volúmenes de Azure NetApp Files.
@@ -636,7 +636,7 @@ Si desea crear backups para otro volumen, es posible introducir estos detalles m
 
 === Añade la funcionalidad de clasificación de BlueXP a un volumen
 
-Al crear una plantilla de volumen, puede agregar en la plantilla que desea analizar el volumen para su cumplimiento y clasificación mediante la https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["Clasificación de BlueXP"^] servicio.
+Al crear una plantilla de volumen, puede agregar en la plantilla que desea analizar el volumen para su cumplimiento y clasificación mediante la https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Clasificación de BlueXP"^] servicio.
 
 image:screenshot_template_data_sense.png["Captura de pantalla de la página para activar la funcionalidad de análisis para sus volúmenes."]
 
@@ -651,7 +651,7 @@ Si desea analizar datos para otro volumen, puede introducir estos detalles manua
 
 === Añade la funcionalidad de replicación de BlueXP a un volumen
 
-Al crear una plantilla de volumen, puede agregar la plantilla que desea replicar los datos del volumen a otro volumen mediante el https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication.html["Replicación de BlueXP"^] servicio. Puede replicar datos en un clúster de Cloud Volumes ONTAP o en un clúster de ONTAP en las instalaciones.
+Al crear una plantilla de volumen, puede agregar la plantilla que desea replicar los datos del volumen a otro volumen mediante el https://docs.netapp.com/us-en/bluexp-replication/concept-replication.html["Replicación de BlueXP"^] servicio. Puede replicar datos en un clúster de Cloud Volumes ONTAP o en un clúster de ONTAP en las instalaciones.
 
 
 TIP: Esta acción no es aplicable para volúmenes de Azure NetApp Files.
@@ -693,7 +693,7 @@ image:screenshot_template_replication_dest.png["Una captura de pantalla de la p�
 image:screenshot_template_replication_policy.png["Una captura de pantalla de la página para definir los ajustes de replicación de BlueXP para la relación."]
 
 +
-.. Seleccione la https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication-policies.html#types-of-replication-policies["política de replicación"^] que usted desea utilizar.
+.. Seleccione la https://docs.netapp.com/us-en/bluexp-replication/concept-replication-policies.html#types-of-replication-policies["política de replicación"^] que usted desea utilizar.
 .. Seleccione una copia puntual o una programación de replicación recurrente.
 .. Habilite la supervisión del estado de la replicación si desea que el informe drift incluya el estado de la replicación de la relación de SnapMirror junto con el tiempo de retraso, el estado y el momento de la última transferencia. link:task-check-template-compliance.html#bluexp-replication-health-details-in-the-drift-report["Vea cómo se ve esto en el informe sobre la deriva"].
 .. Seleccione si desea establecer un límite de velocidad de transferencia y, a continuación, introduzca la tasa máxima (en kilobytes por segundo) a la que se pueden transferir los datos. Se puede introducir un valor fijo, o bien se puede proporcionar un valor mínimo y máximo para permitir que el administrador de almacenamiento seleccione un valor en ese rango.

@@ -49,9 +49,9 @@ Una plantilla es una cadena de "acciones" que tiene algunos valores predefinidos
 
 *Servicios:*
 
-* Activar https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html["Backup y recuperación de BlueXP"^] En los volúmenes (no aplicable para Azure NetApp Files)
-* Activar https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["Clasificación de BlueXP"^] en los volúmenes
-* Activar https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication.html["Replicación de BlueXP"^] En los volúmenes (no aplicable para Azure NetApp Files)
+* Activar https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["Backup y recuperación de BlueXP"^] En los volúmenes (no aplicable para Azure NetApp Files)
+* Activar https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Clasificación de BlueXP"^] en los volúmenes
+* Activar https://docs.netapp.com/us-en/bluexp-replication/concept-replication.html["Replicación de BlueXP"^] En los volúmenes (no aplicable para Azure NetApp Files)
 
 
 Por ejemplo, puede crear una plantilla que cree un volumen Cloud Volumes ONTAP. O que crea un volumen de Cloud Volumes ONTAP y luego permite el backup y recuperación de datos de BlueXP en ese volumen. O que cree un volumen de Cloud Volumes ONTAP y, a continuación, habilite la clasificación de backup y recuperación de BlueXP en ese volumen.

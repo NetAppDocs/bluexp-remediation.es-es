@@ -24,13 +24,13 @@ Descubre las novedades de la corrección y etiquetado de BlueXP.
 
 === Ahora puede crear una plantilla para buscar entornos de trabajo específicos
 
-Mediante la acción "Buscar recursos existentes" puede identificar el entorno de trabajo y, a continuación, utilizar otras acciones de plantilla, como la creación de un volumen, para realizar fácilmente acciones en entornos de trabajo existentes. https://docs.netapp.com/us-en/cloud-manager-app-template/task-define-templates.html#examples-of-finding-existing-resources-and-enabling-services-using-templates["Vaya aquí para obtener más información"].
+Mediante la acción "Buscar recursos existentes" puede identificar el entorno de trabajo y, a continuación, utilizar otras acciones de plantilla, como la creación de un volumen, para realizar fácilmente acciones en entornos de trabajo existentes. https://docs.netapp.com/us-en/bluexp-remediation/task-define-templates.html#examples-of-finding-existing-resources-and-enabling-services-using-templates["Vaya aquí para obtener más información"].
 
 
 
 === Capacidad de crear un entorno de trabajo de alta disponibilidad de Cloud Volumes ONTAP en AWS
 
-La compatibilidad existente para crear un entorno de trabajo de Cloud Volumes ONTAP en AWS se ha ampliado para incluir la creación de un sistema de alta disponibilidad además de un sistema de un único nodo. https://docs.netapp.com/us-en/cloud-manager-app-template/task-define-templates.html#create-a-template-for-a-cloud-volumes-ontap-working-environment["Vea cómo crear una plantilla para un entorno de trabajo de Cloud Volumes ONTAP"].
+La compatibilidad existente para crear un entorno de trabajo de Cloud Volumes ONTAP en AWS se ha ampliado para incluir la creación de un sistema de alta disponibilidad además de un sistema de un único nodo. https://docs.netapp.com/us-en/bluexp-remediation/task-define-templates.html#create-a-template-for-a-cloud-volumes-ontap-working-environment["Vea cómo crear una plantilla para un entorno de trabajo de Cloud Volumes ONTAP"].
 
 
 
@@ -42,7 +42,7 @@ La compatibilidad existente para crear un entorno de trabajo de Cloud Volumes ON
 
 Con la nueva acción "Find Resource" puede identificar todos los volúmenes en los que desea habilitar Cloud Backup y, a continuación, utilizar la acción Cloud Backup para habilitar el backup en esos volúmenes.
 
-Actualmente admite volúmenes en sistemas Cloud Volumes ONTAP y ONTAP en las instalaciones. https://docs.netapp.com/us-en/cloud-manager-app-template/task-define-templates.html#find-existing-volumes-and-activate-bluexp-backup-and-recovery["Vaya aquí para obtener más información"].
+Actualmente admite volúmenes en sistemas Cloud Volumes ONTAP y ONTAP en las instalaciones. https://docs.netapp.com/us-en/bluexp-remediation/task-define-templates.html#find-existing-volumes-and-activate-bluexp-backup-and-recovery["Vaya aquí para obtener más información"].
 
 
 
@@ -52,4 +52,4 @@ Actualmente admite volúmenes en sistemas Cloud Volumes ONTAP y ONTAP en las ins
 
 === Ahora puede etiquetar las relaciones de sincronización para que pueda agruparlas o clasificarlas para un acceso sencillo
 
-https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["Obtenga más información sobre el etiquetado de recursos"].
+https://docs.netapp.com/us-en/bluexp-remediation/concept-tagging.html["Obtenga más información sobre el etiquetado de recursos"].

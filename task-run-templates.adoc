@@ -14,7 +14,7 @@ summary: 'Seleccione una de las plantillas de aplicaciones que su organización 
 
 
 [role="lead"]
-Seleccione una de las plantillas de aplicaciones que su organización ha creado para crear entornos de trabajo o volúmenes optimizados para cargas de trabajo y aplicaciones específicas. Las plantillas también le permiten activar https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html["Backup y recuperación de BlueXP"^], https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["Clasificación de BlueXP"^], y. https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication.html["Replicación de BlueXP"^] en los volúmenes creados o en los volúmenes existentes.
+Seleccione una de las plantillas de aplicaciones que su organización ha creado para crear entornos de trabajo o volúmenes optimizados para cargas de trabajo y aplicaciones específicas. Las plantillas también le permiten activar https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["Backup y recuperación de BlueXP"^], https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Clasificación de BlueXP"^], y. https://docs.netapp.com/us-en/bluexp-replication/concept-replication.html["Replicación de BlueXP"^] en los volúmenes creados o en los volúmenes existentes.
 
 Las plantillas le permiten crear volúmenes para sistemas Cloud Volumes ONTAP, Azure NetApp Files y ONTAP en las instalaciones.
 
@@ -30,7 +30,7 @@ Empiece rápidamente siguiendo estos pasos o desplácese hacia abajo hasta las s
 
 
 [role="quick-margin-list"]
-* Si la plantilla activa un servicio de cloud en el volumen, por ejemplo https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html["Backup y recuperación de BlueXP"^] o. https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["Clasificación de BlueXP"^], asegúrese de que el servicio esté activo y con licencia en su entorno.
+* Si la plantilla activa un servicio de cloud en el volumen, por ejemplo https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["Backup y recuperación de BlueXP"^] o. https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Clasificación de BlueXP"^], asegúrese de que el servicio esté activo y con licencia en su entorno.
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dos"] Inicie el servicio Plantillas de aplicación
@@ -47,11 +47,11 @@ Seleccione la plantilla, haga clic en *Ejecutar plantilla* e introduzca valores 
 
 Lea los siguientes requisitos para asegurarse de tener una configuración compatible.
 
-* Si aún no tiene un conector, https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["Vea cómo crear conectores"^] Para AWS, Azure y GCP.
+* Si aún no tiene un conector, https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["Vea cómo crear conectores"^] Para AWS, Azure y GCP.
 * Al crear un volumen de Cloud Volumes ONTAP, asegúrese de tener disponible un entorno de trabajo de Cloud Volumes ONTAP.
 * Al crear un volumen ONTAP en las instalaciones, asegúrese de que tiene disponible un entorno de trabajo ONTAP en las instalaciones.
 * Al crear un volumen de Azure NetApp Files, asegúrese de tener disponible un entorno de trabajo de Azure NetApp Files.
-* Si la plantilla activa un servicio de cloud en el volumen, por ejemplo  https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html["Backup y recuperación de BlueXP"^], https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["Clasificación de BlueXP"^], o. https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication.html["Replicación de BlueXP"^], asegúrese de que el servicio esté activo y con licencia en su entorno.
+* Si la plantilla activa un servicio de cloud en el volumen, por ejemplo  https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["Backup y recuperación de BlueXP"^], https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Clasificación de BlueXP"^], o. https://docs.netapp.com/us-en/bluexp-replication/concept-replication.html["Replicación de BlueXP"^], asegúrese de que el servicio esté activo y con licencia en su entorno.
 
 
 
@@ -66,9 +66,9 @@ Existen varias formas de seleccionar y ejecutar una plantilla para crear nuevos 
 
 Independientemente del método elegido, los detalles acerca de los parámetros de volumen necesarios que debe definir están disponibles en las siguientes secciones:
 
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-create-volumes.html#create-a-volume-from-a-template["Cómo aprovisionar volúmenes de Cloud Volumes ONTAP"^]
-* https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-create-volumes.html#create-volumes-from-templates["Cómo aprovisionar volúmenes de Azure NetApp Files"^]
-* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-manage-ontap-connector.html#create-volumes-from-templates["Cómo aprovisionar volúmenes de ONTAP en las instalaciones"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-create-volumes.html#create-a-volume-from-a-template["Cómo aprovisionar volúmenes de Cloud Volumes ONTAP"^]
+* https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-create-volumes.html#create-volumes-from-templates["Cómo aprovisionar volúmenes de Azure NetApp Files"^]
+* https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-manage-ontap-connector.html#create-volumes-from-templates["Cómo aprovisionar volúmenes de ONTAP en las instalaciones"^]
 
 
 
@@ -131,7 +131,7 @@ Tenga en cuenta que al ejecutar la plantilla desde la consola se necesita selecc
 
 Puede crear un nuevo entorno de trabajo desde _Templates Dashboard_ si su empresa ha creado una plantilla para esta funcionalidad.
 
-Si tiene alguna pregunta sobre los detalles necesarios para crear el entorno de trabajo, consulte https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html["Inicio de Cloud Volumes ONTAP en AWS"^].
+Si tiene alguna pregunta sobre los detalles necesarios para crear el entorno de trabajo, consulte https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-aws.html["Inicio de Cloud Volumes ONTAP en AWS"^].
 
 .Pasos
 . Seleccione *Estado > resolución* y haga clic en la ficha *Plantillas*.
